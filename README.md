@@ -80,3 +80,57 @@ let isNew: boolean = null;
 let myName: string = undefined;
 ```
 null and undefined are ignore type.
+
+
+### Array
+You can use also array types. The array can define familer syntax for variable.
+```
+let list1: number[] = [1,2,3];
+let list2: Array<number> = [1,2,3];
+
+let person1: [string, number] = ['Chris', 22];
+```
+
+### Error
+```
+
+let person1: [string, number] = ['Chris', 22, 35];
+```
+
+### enum
+If you wanna get key of value, you can use `enum` keyword. The enums allow us to declare a set of named constants i.e. a collection of related values that can be numeric or string values.
+```
+enum Color {Red, Green, Blue};
+let c: Color = Color.Green;
+console.log(c);
+```
+
+
+```
+enum Color {Red = 5, Green, Blue};
+let c: Color = Color.Green;
+console.log(c);
+```
+
+
+### Any
+The any type can put the antying type, If you didin't assign type yet, you can use useful.
+```
+let myVariable: any = 10;
+```
+
+```
+let anyType: any;
+anyType = 20;
+anyType = true;
+```
+
+### Union
+And if you wanna using mutilpull type at the same variable, you can use type and pipe character(`|`).
+```
+let multiType: number | boolean;
+// or let mutilType: (number | boolean);
+multiType = 20;
+multiType = true;
+```
+
