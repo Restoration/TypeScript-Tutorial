@@ -50,5 +50,33 @@ $ tsc main.ts --watch
 ## Variable Declarations
 From ES6, you can use `let` and `const`, also the TypeScript must be using `let` and `const`. Because, `var` is global scope, sometimes global scope cause problem in JavaScript development. So you should use `let` which is block scope.
 
-## Variable Types
+## Variable Type
+The TypeScript assign to type for variable. If you wanna use type, assign afeter variable and with colon(`:`).
+```main.ts
+let isBeginner: boolean = true;
+let total: number = 0;
+let name: string = 'Vishwas';
+```
 
+As well, you can use a template literal.
+```main.ts
+let name: string = 'JavaScript';
+let sentence: string = `Hello ${name} World`;
+```
+### Error
+If you assigned different type, The TypeScript show error.
+```main.ts
+let name: string = 'JavaScript';
+name = true;
+let sentence: string = `Hello ${name} World`;
+```
+### null and undefined
+And also, null and undefined types, you can assign variable. The bellow code is working.
+```
+let n: null = null;
+let u: undefined = undefined;
+
+let isNew: boolean = null;
+let myName: string = undefined;
+```
+null and undefined are ignore type.

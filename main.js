@@ -2,3 +2,12 @@
 exports.__esModule = true;
 var message = 'Hello World';
 console.log(message);
+var title = 'Codevolution';
+var isBeginner = true;
+var name = 'Vishwas';
+var sentence = "My name is " + name + "\nI am a beginner in TypeScript";
+console.log(sentence);
+var n = null;
+var u = undefined;
+var isNew = null;
+var myName = undefined;
