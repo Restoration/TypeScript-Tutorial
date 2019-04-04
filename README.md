@@ -13,7 +13,7 @@ TypeScript Tutorial for Beginners.
 - IDE support
 - Rapid growth and use
 
-## Install
+## Environment Setup
 Depend on Node.js. The TypeScript needs npm module.
 ```
 $ npm install -g typescript
@@ -24,7 +24,6 @@ $ tsc -v
 $ tsc -help
 ```
 
-## Compile
 The TypeScript file has ts extension which is `.ts`. Also if you have React project, You can use `.tsx` extension.
 First thing. Please, create `main.ts` file.
 
@@ -43,4 +42,13 @@ $ tsc main.ts
 $ node main.js
 ```
 
+Also, You can transpile when you rewrite code.
+```
+$ tsc main.ts --watch
+```
+
+## Variable Declarations
+From ES6, you can use `let` and `const`, also the TypeScript must be using `let` and `const`. Because, `var` is global scope, sometimes global scope cause problem in JavaScript development. So you should use `let` which is block scope.
+
+## Variable Types
 
