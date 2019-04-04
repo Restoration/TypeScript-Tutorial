@@ -206,3 +206,55 @@ let p = {
 
 fullname(p);
 ```
+
+### Class
+From ES6 can use class syntax also you can assign data type.
+```main.ts
+class Employee {
+    employeeName: string;
+    constructor(name: string){
+        this.employeeName = name;
+    }
+
+    greet(){
+        console.log(`Good Morning ${this.employeeName}`);
+    }
+}
+
+let emp = new Employee('Vishwas');
+console.log(emp.employeeName);
+emp.greet();
+```
+
+### Access Modifiers
+extend Employee class. you can use protected keyword.
+```main.ts
+class Employee {
+    protected employeeName: string;// protected key word so show error
+    constructor(name: string){
+        this.employeeName = name;
+    }
+
+    greet(){
+        console.log(`Good Morning ${this.employeeName}`);
+    }
+}
+
+class Manager extends Employee {
+    constructor(managerName: string){
+        super(managerName);
+    }
+    delegateWork(){
+        console.log(`Manager delegating tasks ${this.employeeName}`);
+    }
+}
+
+let emp = new Employee('Vishwas');
+console.log(emp.employeeName);
+emp.greet();
+
+let m = new Manager('Bruce');
+m.delegateWork();
+m.greet();
+console.log(m.employeeName);
+```
