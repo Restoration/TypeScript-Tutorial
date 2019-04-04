@@ -48,3 +48,23 @@ function add(num1: number, num2: number = 10) : number{
 
 console.log(add(1,2));
 console.log(add(1));
+
+
+
+
+
+
+interface Person {
+    firstName: string;
+    lastName: string;
+}
+function fullname(person: Person){
+    console.log(`${person.firstName} ${person.lastName}`);
+}
+let p = {
+    firstName: 'Yosui',
+    lastName: 'Inoue'
+}
+
+fullname(p);
+

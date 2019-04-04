@@ -38,3 +38,11 @@ function add(num1, num2) {
 }
 console.log(add(1, 2));
 console.log(add(1));
+function fullname(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+var p = {
+    firstName: 'Yosui',
+    lastName: 'Inoue'
+};
+fullname(p);

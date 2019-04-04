@@ -175,4 +175,34 @@ console.log(add(1,2));
 console.log(add(1));
 ```
 
+### Interface
+The TypeScript can use interface when you use many same parameter. The bellow code is basic function and parameter.
+```main.ts
+function fullname(person: {firstname: string, lastname: string}){
+    console.log(`${person.firstname} ${person.lastname}`);
+}
 
+let p = {
+    firstname: 'yosui',
+    lastname: 'inoue'
+}
+fullname(p);
+```
+Then, above code using interface.
+
+```main.ts
+interface Person {
+    firstName: string;
+    lastName: string;
+}
+// you can assign type with interface
+function fullname(person: Person){
+    console.log(`${person.firstName} ${person.lastName}`);
+}
+let p = {
+    firstName: 'Yosui',
+    lastName: 'Inoue'
+}
+
+fullname(p);
+```
