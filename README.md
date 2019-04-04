@@ -18,6 +18,9 @@ Depend on Node.js. The TypeScript needs npm module.
 ```
 $ npm install -g typescript
 ```
-
-
+After that, you can `tsc` command. Please, execute bellow command which is showing version for TypeScript to check.
+```
+$ tsc -v
+$ tsc -help
+```
 
