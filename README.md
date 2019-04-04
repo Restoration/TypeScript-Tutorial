@@ -24,3 +24,23 @@ $ tsc -v
 $ tsc -help
 ```
 
+## Compile
+The TypeScript file has ts extension which is `.ts`. Also if you have React project, You can use `.tsx` extension.
+First thing. Please, create `main.ts` file.
+
+```
+$ nvim main.ts
+```
+
+```main.ts
+let message = 'Hello World';
+console.log(message);
+```
+
+The TypeScript needs transpiring. If you compile TypeScript file, It will be JavaScript file. The transpile command is `$ tsc <Your file name>`.
+```
+$ tsc main.ts
+$ node main.js
+```
+
+
