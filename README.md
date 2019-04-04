@@ -1,7 +1,11 @@
 # TypeScript-Tutorial
-TypeScript Tutorial for Beginners.
 
 [Learn TypeScript in 50 Minutes - Tutorial for Beginners](https://www.youtube.com/watch?v=WBPrJSw7yQA)
+
+Codevolution
+
+TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. In this typescript tutorial for beginners, we go over the fundamental concepts like variable declarations, variable types, functions, interfaces, classes and access modifiers.
+
 
 ## What & Why?
 - Open source programming language from Microsoft
