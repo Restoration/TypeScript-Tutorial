@@ -72,7 +72,7 @@ let sentence: string = `Hello ${name} World`;
 ```
 ### null and undefined
 And also, null and undefined types, you can assign variable. The bellow code is working.
-```
+```main.ts
 let n: null = null;
 let u: undefined = undefined;
 
@@ -84,7 +84,7 @@ null and undefined are ignore type.
 
 ### Array
 You can use also array types. The array can define familer syntax for variable.
-```
+```main.ts
 let list1: number[] = [1,2,3];
 let list2: Array<number> = [1,2,3];
 
@@ -92,21 +92,20 @@ let person1: [string, number] = ['Chris', 22];
 ```
 
 ### Error
-```
-
+```maint.ts
 let person1: [string, number] = ['Chris', 22, 35];
 ```
 
 ### enum
 If you wanna get key of value, you can use `enum` keyword. The enums allow us to declare a set of named constants i.e. a collection of related values that can be numeric or string values.
-```
+```main.ts
 enum Color {Red, Green, Blue};
 let c: Color = Color.Green;
 console.log(c);
 ```
 
 
-```
+```main.ts
 enum Color {Red = 5, Green, Blue};
 let c: Color = Color.Green;
 console.log(c);
@@ -115,11 +114,11 @@ console.log(c);
 
 ### Any
 The any type can put the antying type, If you didin't assign type yet, you can use useful.
-```
+```main.ts
 let myVariable: any = 10;
 ```
 
-```
+```main.ts
 let anyType: any;
 anyType = 20;
 anyType = true;
@@ -127,10 +126,53 @@ anyType = true;
 
 ### Union
 And if you wanna using mutilpull type at the same variable, you can use type and pipe character(`|`).
-```
+```main.ts
 let multiType: number | boolean;
 // or let mutilType: (number | boolean);
 multiType = 20;
 multiType = true;
 ```
+
+### Functions
+The function can assign types, the bellow code is basic function which doesn't have type function.
+```main.ts
+function add(num1, num2){
+    return num1 + num2;
+}
+console.log(add(1,2));
+console.log(add(1));
+```
+The next, assigned types.
+```main.ts
+function add(num1: number, num2: number) : number{
+    return num1 + num2;
+}
+console.log(add(1,2));
+console.log(add(1));
+```
+In the function, you can assign types arguments and return value. The return value assign after araguments. However, in another situetion, you wannt use undefined type, you can use question mark which is using assign undefined value.
+```main.ts
+function add(num1: number, num2?: number) : number{
+    if(num2){
+        return num1 + num2;
+    } else {
+        return num1;
+    }
+}
+console.log(add(1,2));
+console.log(add(1));
+```
+Then, you can use default parameter, like this.
+```main.ts
+function add(num1: number, num2: number = 10) : number{
+    if(num2){
+        return num1 + num2;
+    } else {
+        return num1;
+    }
+}
+console.log(add(1,2));
+console.log(add(1));
+```
+
 
